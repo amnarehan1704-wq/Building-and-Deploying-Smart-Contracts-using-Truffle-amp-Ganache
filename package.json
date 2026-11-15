@@ -1,0 +1,19 @@
+{
+  "name": "campus-lost-found-truffle",
+  "version": "1.0.0",
+  "description": "MG3012 Assignment 3 - Campus Lost & Found dApp deployed with Truffle and Ganache",
+  "scripts": {
+    "ganache": "ganache --port 7545 --wallet.deterministic --chain.chainId 1337 --chain.networkId 5777",
+    "compile": "truffle compile",
+    "test": "truffle test",
+    "migrate": "truffle migrate --reset",
+    "interact": "truffle exec scripts/interact.js --network development",
+    "frontend": "python -m http.server 8000 --directory frontend"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "ganache": "^7.9.2",
+    "truffle": "^5.11.5",
+    "truffle-assertions": "^0.9.2"
+  }
+}

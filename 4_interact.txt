@@ -1,0 +1,8 @@
+Using network 'development'.
+CampusLostFound: 0x4cFB3F70BF6a80397C2e634e5bDd85BC0bb189EE
+Reputation     : 0xf19A2A01B70519f67ADb309a994Ec8c69A967E8b
+1) Reported item (lost) by 0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1
+2) Item #2 claimed by 0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0
+3) Item #2 marked returned by reporter
+Item #2 -> Black backpack | status: Returned
+Reputation points of claimer: 2

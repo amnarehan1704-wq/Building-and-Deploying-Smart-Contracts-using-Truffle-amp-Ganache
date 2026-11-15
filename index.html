@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Lost &amp; Found dApp (Truffle + Ganache)</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.7.0/ethers.umd.min.js"></script>
+</head>
+<body>
+
+<header>
+  <img alt="Magnifying glass logo" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='26' cy='26' r='16' fill='none' stroke='white' stroke-width='6'/><line x1='38' y1='38' x2='58' y2='58' stroke='white' stroke-width='7' stroke-linecap='round'/></svg>">
+  <h1>Campus Lost &amp; Found</h1>
+  <p>Deployed with Truffle on a local Ganache blockchain &mdash; MG3012 Assignment 3</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>1. Connect Wallet</h2>
+    <p>Connect MetaMask to the local Ganache network (RPC <code>http://127.0.0.1:7545</code>, Chain ID <code>1337</code>).</p>
+    <button id="connectBtn">Connect MetaMask</button>
+    <p>Status: <span id="status">Not connected</span></p>
+    <p class="muted">Account: <span id="account">-</span></p>
+    <p class="muted">CampusLostFound contract: <span id="contractAddr">-</span></p>
+    <p class="muted">Reputation contract: <span id="repAddr">-</span></p>
+    <p class="muted">My helper points: <strong id="myPoints">0</strong></p>
+  </section>
+
+  <section>
+    <h2>2. Report an Item</h2>
+    <label>Type
+      <select id="itemType">
+        <option value="lost">I lost something</option>
+        <option value="found">I found something</option>
+      </select>
+    </label>
+    <label>Title
+      <input id="title" type="text" placeholder="e.g. Black backpack">
+    </label>
+    <label>Description
+      <textarea id="description" rows="2" placeholder="Colour, brand, any marks..."></textarea>
+    </label>
+    <label>Location
+      <input id="location" type="text" placeholder="e.g. Library, 2nd floor">
+    </label>
+    <button id="reportBtn" disabled>Submit to Blockchain</button>
+    <div id="txResult"></div>
+  </section>
+
+  <section>
+    <h2>3. Reported Items</h2>
+    <p>Total items on-chain: <strong id="count">0</strong></p>
+    <button id="refreshBtn" class="secondary" disabled>Refresh List</button>
+    <div id="itemList" style="margin-top:14px;"></div>
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <ul>
+      <li>Report a lost or found item &mdash; stored on the blockchain.</li>
+      <li>Anyone else can <b>claim</b> an open item.</li>
+      <li>The original reporter confirms it was <b>returned</b>, and the helper earns a reputation point (2nd contract).</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>MG3012 &ndash; Blockchain Technology for Business &middot; BSFT Fall 2026</footer>
+
+<!-- written automatically by migrations/1_deploy_contract.js -->
+<script src="contract-config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

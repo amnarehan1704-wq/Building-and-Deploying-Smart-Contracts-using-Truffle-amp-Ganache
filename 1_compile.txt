@@ -1,0 +1,7 @@
+Compiling your contracts...
+===========================
+> Compiling ./contracts/Reputation.sol
+> Compiling ./contracts/SmartContract.sol
+> Artifacts written to /home/claude/a3/build/contracts
+> Compiled successfully using:
+   - solc: 0.8.20+commit.a1b79de6.Emscripten.clang

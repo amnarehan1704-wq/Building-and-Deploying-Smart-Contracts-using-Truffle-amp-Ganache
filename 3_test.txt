@@ -1,0 +1,21 @@
+Using network 'development'.
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+   > frontend/contract-config.js updated
+  Contract: CampusLostFound
+    ✔ starts with zero items
+    ✔ reports a lost item and stores the correct data (124ms)
+    ✔ emits ItemReported event (74ms)
+    ✔ rejects an empty title (156ms)
+    ✔ lets another student claim an open item (136ms)
+    ✔ does not let the reporter claim their own item (74ms)
+    ✔ does not let an item be claimed twice (93ms)
+    ✔ reverts when claiming a non-existent item
+    ✔ only the reporter can mark an item as returned (165ms)
+    ✔ cannot return an item that was never claimed (79ms)
+    ✔ keeps ids sequential for multiple items (143ms)
+    ✔ awards a reputation point to the claimer when item is returned (127ms)
+    ✔ only CampusLostFound can add reputation points
+    ✔ Reputation link can be set only once and only by owner (54ms)
+  14 passing (3s)

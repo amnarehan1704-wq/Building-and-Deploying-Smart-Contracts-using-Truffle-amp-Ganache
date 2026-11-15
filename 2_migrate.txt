@@ -1,0 +1,44 @@
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+Starting migrations...
+======================
+> Network name:    'development'
+> Network id:      5777
+> Block gas limit: 30000000 (0x1c9c380)
+1_deploy_contract.js
+====================
+   Deploying 'Reputation'
+   ----------------------
+   > transaction hash:    0xdf5f6b35727d839d16f719dafc5091cc58b36695b909a5a91866eb20387be40f
+   > Blocks: 0            Seconds: 0
+   > contract address:    0xf19A2A01B70519f67ADb309a994Ec8c69A967E8b
+   > block number:        63
+   > block timestamp:     1794753255
+   > account:             0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1
+   > balance:             999.954621987926017902
+   > gas used:            251246 (0x3d56e)
+   > gas price:           2.500266242 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000628181892237532 ETH
+   Deploying 'CampusLostFound'
+   ---------------------------
+   > transaction hash:    0xaf546b2de49ca0dbcfb858529e11fac34c84c6a3e84013b1420631502c6937b7
+   > Blocks: 0            Seconds: 0
+   > contract address:    0x4cFB3F70BF6a80397C2e634e5bDd85BC0bb189EE
+   > block number:        64
+   > block timestamp:     1794753255
+   > account:             0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1
+   > balance:             999.952587967950025262
+   > gas used:            813532 (0xc69dc)
+   > gas price:           2.50023352 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00203401997599264 ETH
+   > frontend/contract-config.js updated
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.002662201868230172 ETH
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.002662201868230172 ETH
